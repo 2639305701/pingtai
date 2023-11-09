@@ -177,16 +177,23 @@ a {
 .productList .big_container .state {
   height: 30px;
   padding-top: 45px;
-  margin-bottom: 5px;
+  margin-bottom: 25px;
 }
 .productList .big_container .state .title {
   font-size: 24px;
-  color: #666;
+  color: #0f0e0ecc;
   margin: 0 8px 0 45px;
+  position: relative;
+  z-index: 9999;
+  margin-top: -30px;
+  margin-left: 0px;
 }
 .productList .big_container .state .content {
   font-size: 14px;
-  color: #666;
+  color: #0f0e0ee2;
+  position: relative;
+  z-index: 9999;
+  margin-top: -15px;
 }
 .productList .big_container .contList {
   width: 1200px;
