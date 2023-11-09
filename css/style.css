@@ -1,0 +1,459 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, img {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+dl dt, dd {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.banner {
+  height: 360px;
+  width: 1263px;
+  overflow: hidden;
+  z-index: 1111;
+  position: relative;
+}
+.banner ul {
+  height: 360px;
+  width: 1263px;
+  position: absolute;
+  overflow: hidden;
+}
+.banner ul li {
+  position: relative;
+  width: 1263px;
+  height: 360px;
+  float: left;
+  overflow: hidden;
+}
+.banner ul li img {
+  width: 100%;
+  height: 360px;
+}
+.banner .pages {
+  width: 60%;
+  height: 12px;
+  position: absolute;
+  bottom: 15px;
+  left: 40%;
+}
+.banner .pages > div {
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  float: left;
+  margin-left: 25px;
+  cursor: pointer;
+  background: white;
+}
+.banner .pages > div.current {
+  background: #FFC000;
+}
+
+.sift {
+  width: 100%;
+  height: 275px;
+  padding-top: 15px;
+  margin: 0 auto;
+}
+.sift .photo {
+  width: 140px;
+  height: 43px;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+}
+.sift .photo img {
+  margin: 0 auto;
+}
+.sift .imgList {
+  width: 1210px;
+  height: 230px;
+  background: #fff;
+  margin: 0 auto;
+}
+.sift .imgList .indlist {
+  width: 1140px;
+  height: 230px;
+  overflow: hidden;
+  float: left;
+}
+.sift .imgList .indlist div {
+  width: 189px;
+  height: 230px;
+  position: relative;
+  float: left;
+}
+.sift .imgList .indlist div dl {
+  width: 190px;
+  height: 230px;
+  border-right: 1px solid #ddd;
+  float: left;
+  overflow: hidden;
+  font-size: 12px;
+  text-align: center;
+  padding-top: 10px;
+}
+.sift .imgList .indlist div dl a {
+  margin: 10px 0 10px 0;
+}
+.sift .imgList .indlist div dl a img {
+  width: 160px;
+  height: 160px;
+  transform: translateY(0);
+  transition: transform .25s ease;
+}
+.sift .imgList .indlist div dl dt {
+  color: #666;
+  margin-top: 5px;
+}
+.sift .imgList .indlist div dl dd {
+  color: red;
+  margin-top: 5px;
+}
+.sift .imgList .indlist div .joinCar {
+  color: #333;
+  position: absolute;
+  top: 230px;
+  left: 0;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  background: #ffc000;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  transition: top 0.25s ease;
+}
+.sift .imgList .indlist div:hover .joinCar {
+  top: 180px;
+}
+.sift .imgList .indlist div:hover img {
+  transform: translateY(-10px);
+}
+.sift .imgList .pages {
+  display: none;
+}
+.sift .imgList .preimg {
+  display: block;
+}
+.sift .imgList .next {
+  width: 44px;
+  height: 230px;
+  text-align: center;
+  float: left;
+  position: relative;
+  margin-left: 16px;
+}
+.sift .imgList .next .nextimg {
+  background: url(../images/slider-arrow.png) no-repeat -60px 0;
+  width: 18px;
+  height: 32px;
+  top: 40%;
+  left: 35%;
+  position: absolute;
+  cursor: pointer;
+}
+
+.productList .big_container {
+  width: 1200px;
+  height: 540px;
+  margin: 0 auto;
+}
+.productList .big_container .state {
+  height: 30px;
+  padding-top: 45px;
+  margin-bottom: 5px;
+}
+.productList .big_container .state .title {
+  font-size: 24px;
+  color: #666;
+  margin: 0 8px 0 45px;
+}
+.productList .big_container .state .content {
+  font-size: 14px;
+  color: #666;
+}
+.productList .big_container .contList {
+  width: 1200px;
+  height: 460px;
+}
+.productList .big_container .contList .listBig {
+  width: 400px;
+  height: 460px;
+  float: left;
+  position: relative;
+}
+.productList .big_container .contList .listBig a {
+  width: 450px;
+  height: 460px;
+  position: absolute;
+  left: -50px;
+  bottom: 0;
+  overflow: hidden;
+  display: block;
+  text-align: right;
+  color: #666;
+}
+.productList .big_container .contList .listBig a img {
+  border: none;
+}
+.productList .big_container .contList .listContent {
+  width: 800px;
+  height: 460px;
+  overflow: hidden;
+  background: #fff;
+  float: left;
+}
+.productList .big_container .contList .listContent div {
+  width: 199px;
+  height: 230px;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+.productList .big_container .contList .listContent div dl {
+  width: 199px;
+  height: 230px;
+  float: left;
+  overflow: hidden;
+  font-size: 12px;
+  text-align: center;
+  padding-top: 10px;
+}
+.productList .big_container .contList .listContent div dl a {
+  margin: 10px 0 10px 0;
+}
+.productList .big_container .contList .listContent div dl a img {
+  width: 160px;
+  height: 160px;
+  transform: translateY(0);
+  tranpsition: transform .25s ease;
+}
+.productList .big_container .contList .listContent div dl dt {
+  color: #666;
+  margin-top: 5px;
+}
+.productList .big_container .contList .listContent div dl dd {
+  color: red;
+  margin-top: 5px;
+}
+.productList .big_container .contList .listContent div .joinCar {
+  color: #333;
+  position: absolute;
+  top: 230px;
+  left: 0;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  background: #ffc000;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  transition: top .25s ease;
+}
+.productList .big_container .contList .listContent div:hover .joinCar {
+  top: 180px;
+}
+.productList .big_container .contList .listContent div:hover img {
+  transform: translateY(-10px);
+}
+.productList .big_container .contList .listContent .none_border {
+  border-right: none;
+}
+
+.ladder {
+  border: 4px solid #7BBE2B;
+  width: 42px;
+  height: 512px;
+  position: fixed;
+  bottom: 10px;
+  right: 0;
+  background: white;
+  display: none;
+}
+.ladder .side_menu {
+  list-style: none;
+  width: 42px;
+  height: 504px;
+}
+.ladder .side_menu .diff span {
+  color: #7BBE2B;
+}
+.ladder .side_menu .diff span a {
+  color: #7BBE2B;
+}
+.ladder .side_menu .diffent:hover a {
+  color: white;
+}
+.ladder .side_menu li {
+  width: 42px;
+  height: 42px;
+  line-height: 15px;
+  border-bottom: 1px solid #7BBE2B;
+  text-align: center;
+  position: relative;
+  color: #666;
+}
+.ladder .side_menu li:hover {
+  background: #7BBE2B;
+}
+.ladder .side_menu li:hover span {
+  color: white;
+}
+.ladder .side_menu li span {
+  position: absolute;
+  font-size: 12px;
+  padding: 5px 5px;
+  left: 0;
+  top: 0;
+  width: 32px;
+  height: 30px;
+  line-height: 15px;
+  text-align: center;
+}
+.ladder .side_menu li .heart {
+  width: 42px;
+  height: 42px;
+  font-size: 12px;
+  display: inline-block;
+  background: url(../images/atction2.png) no-repeat 2px 5px;
+}
+.ladder .side_menu li .see {
+  display: none;
+  height: 37px;
+  width: 74px;
+  right: 78px;
+  top: 0;
+  line-height: 17px;
+  cursor: pointer;
+  padding-top: 5px;
+  border: 4px solid #7BBE2B;
+  border-right: none;
+  position: relative;
+  border-radius: 3px 0 0 3px;
+  font-size: 12px;
+  color: #666;
+}
+.ladder .side_menu li .see > a {
+  color: #ffc000;
+}
+.ladder .side_menu li .atten {
+  display: none;
+  position: absolute;
+  right: 46px;
+  top: -44px;
+  padding-top: 6px;
+  border-radius: 3px 0 0 3px;
+  border: 4px solid #7BBE2B;
+  border-right: none;
+}
+.ladder .side_menu li .atten img {
+  width: 109px;
+  height: 109px;
+}
+.ladder .side_menu li:nth-child(10):hover .see {
+  display: block;
+}
+.ladder .side_menu li:nth-child(11):hover .atten {
+  display: block;
+}
+
+.ceiling {
+  width: 1200px;
+  margin: 0 auto;
+  position: fixed;
+  top: 10px;
+  background: white;
+  background: rgba(255, 255, 255, 0.8);
+  border-bottom: 2px solid #7BBE2B;
+  padding-left: 31px;
+  display: none;
+}
+.ceiling h1 {
+  width: 190px;
+  height: 43px;
+  background: url(../images/logo.png) no-repeat;
+  float: left;
+}
+.ceiling h1 > a {
+  display: none;
+}
+.ceiling .search {
+  width: 606px;
+  height: 99px;
+  float: left;
+  margin-left: 150px;
+  display: none;
+}
+.ceiling .search form {
+  border: 1px solid #ffc000;
+  border-radius: 4px;
+}
+.ceiling .search form input {
+  border: none;
+  outline: none;
+}
+.ceiling .search form .txt {
+  width: 517px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 12px;
+}
+.ceiling .search form .sub {
+  width: 82px;
+  height: 38px;
+  background: #ffc000;
+  font-size: 18px;
+  color: white;
+}
+.ceiling .cart {
+  width: 108px;
+  height: 36px;
+  line-height: 34px;
+  border: 1px solid #ffc000;
+  border-radius: 5px;
+  padding-left: 50px;
+  float: right;
+  right: 0;
+  position: relative;
+}
+.ceiling .cart i {
+  position: absolute;
+  left: 120px;
+  top: 2px;
+}
+.ceiling .cart i:nth-child(1) {
+  font-size: 34px !important;
+  color: #ffc000;
+  left: 10px;
+}
+.ceiling .cart span {
+  position: absolute;
+  left: 55px;
+}
+.ceiling .cart span a {
+  font-size: 12px;
+  color: #666666;
+}
+.ceiling .cart span a:hover {
+  color: #ffc000;
+}
+
+/*# sourceMappingURL=style.css.map */

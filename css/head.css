@@ -1,0 +1,343 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+}
+
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, img {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav1 {
+  height: 30px;
+  width: 100%;
+  background: #f1f1f1;
+}
+.nav1 > p {
+  line-height: 30px;
+  height: 30px;
+  font-size: 11px;
+  color: #666666;
+  float: left;
+  padding-left: 32px;
+}
+.nav1 ul {
+  float: right;
+  width: 271px;
+  height: 30px;
+  line-height: 30px;
+}
+.nav1 ul li {
+  float: left;
+  text-align: center;
+}
+.nav1 ul li:nth-child(3) {
+  position: relative;
+}
+.nav1 ul li:nth-child(3) .contact {
+  position: absolute;
+  width: 299px;
+  height: 170px;
+  right: -30px;
+  background: #FFFFFF;
+  display: none;
+}
+.nav1 ul li:nth-child(3) .contact div {
+  float: left;
+  padding: 15px;
+}
+.nav1 ul li:nth-child(3) .contact div img {
+  display: block;
+}
+.nav1 ul li:nth-child(3):hover {
+  background: #FFFFFF;
+}
+.nav1 ul li:nth-child(3):hover .contact {
+  display: block;
+  background: white;
+}
+.nav1 ul li:nth-child(4) {
+  position: relative;
+}
+.nav1 ul li:nth-child(4) a {
+  border: none;
+}
+.nav1 ul li:nth-child(4) > p {
+  display: none;
+  background: #FFFFFF;
+  font-size: 9px;
+  padding: 15px 10px;
+  position: absolute;
+  left: 0;
+  width: 90px;
+}
+.nav1 ul li:nth-child(4):hover {
+  background: #FFFFFF;
+}
+.nav1 ul li:nth-child(4):hover > p {
+  display: block;
+  background: white;
+}
+.nav1 ul li a {
+  font-size: 11px;
+  color: #666666;
+  padding: 0 10px;
+  border-right: 1px solid #c0c0c0;
+}
+.nav1 ul li a:hover {
+  color: #7dbf2d;
+}
+
+.logoList {
+  height: 100px;
+}
+.logoList h1 {
+  width: 190px;
+  height: 43px;
+  margin-top: 30px;
+  margin-left: 32px;
+  background: url(../images/logo.png) no-repeat;
+  float: left;
+}
+.logoList h1 > a {
+  display: none;
+}
+.logoList .search {
+  width: 606px;
+  height: 99px;
+  float: left;
+  margin-left: 150px;
+}
+.logoList .search form {
+  width: 604px;
+  height: 36px;
+  border: 1px solid #ffc000;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+.logoList .search form input {
+  border: none;
+  outline: none;
+}
+.logoList .search form .txt {
+  width: 507px;
+  height: 26px;
+  line-height: 26px;
+  font-size: 12px;
+  padding-left: 11px;
+}
+.logoList .search form .sub {
+  width: 81px;
+  height: 36px;
+  background: #ffc000;
+  font-size: 18px;
+  color: white;
+}
+.logoList .search form .association_box {
+  background: white;
+  top: 97px;
+  z-index: 1111;
+  border: 1px solid #ccc;
+  display: none;
+}
+.logoList .search .keyword {
+  height: 31px;
+  width: 330px;
+  margin-left: 10px;
+}
+.logoList .search .keyword a {
+  font-size: 11px;
+  color: #c0caca;
+  padding-right: 12px;
+}
+.logoList .cart {
+  width: 158px;
+  height: 35px;
+  line-height: 35px;
+  border: 1px solid #ffc000;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-left: 94px;
+  float: left;
+  position: relative;
+}
+.logoList .cart i {
+  position: absolute;
+  left: 120px;
+  top: 3px;
+}
+.logoList .cart i:nth-child(1) {
+  font-size: 34px !important;
+  color: #ffc000;
+  left: 10px;
+}
+.logoList .cart span {
+  position: absolute;
+  left: 50px;
+}
+.logoList .cart span a {
+  font-size: 12px;
+  color: #666666;
+}
+.logoList .cart span a:hover {
+  color: #ffc000;
+}
+
+.classify {
+  overflow: visible;
+  height: 35px;
+  border-bottom: 2px solid #6cac1b;
+}
+.classify .stair {
+  width: 160px;
+  height: 27px;
+  margin-left: 32px;
+  background: #6cac1b;
+  padding-left: 30px;
+  padding-top: 10px;
+}
+.classify .stair span {
+  font-size: 16px;
+  color: #33332b;
+  font-weight: 700;
+}
+.classify .second {
+  display: none;
+  width: 190px;
+  height: 360px;
+  background: white;
+  margin-left: 32px;
+  z-index: 9999999999999999;
+  overflow: visible;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.7);
+}
+.classify .second li {
+  height: 40px;
+  width: 190px;
+  line-height: 40px;
+  position: relative;
+  background: url(../image/5.png) no-repeat right 20px center;
+}
+.classify .second li:hover {
+  background: white;
+}
+.classify .second li > a {
+  font-size: 12px;
+  color: #333333;
+  padding-left: 20px;
+}
+.classify .second li:hover a {
+  color: #7dbf2d;
+}
+.classify .second li .three {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: -1007px;
+  width: 1007px;
+  border: 1px solid #7dbf2d;
+  background: white;
+  border-top: none;
+}
+.classify .second li .three > div {
+  float: left;
+}
+.classify .second li .three > div .big {
+  width: 765px;
+}
+.classify .second li .three > div .big .small {
+  width: 765px;
+}
+.classify .second li .three > div .big .small .left {
+  width: 105px;
+  float: left;
+  line-height: 34px;
+}
+.classify .second li .three > div .big .small .left > a {
+  display: block;
+  font-size: 11px;
+  color: #333333;
+  font-weight: 700;
+  text-align: right;
+  width: 105px;
+  padding-right: 5px;
+}
+.classify .second li .three > div .big .small .left > a:hover {
+  color: #7dbf2d;
+}
+.classify .second li .three > div .big .small .right {
+  float: left;
+  width: 655px;
+  line-height: 34px;
+  border-bottom: 1px solid #dddddd;
+  padding-left: 5px;
+}
+.classify .second li .three > div .big .small .right a {
+  font-size: 11px;
+  color: #666666;
+}
+.classify .second li .three > div .big .small .right a:hover {
+  color: #7dbf2d;
+}
+.classify .second li .three .imgs {
+  float: left;
+  width: 240px;
+  height: 359px;
+}
+.classify .second li .three .imgs a img {
+  width: 135px;
+  height: 122px;
+  margin-left: 63px;
+  margin-top: 55px;
+}
+.classify .second li .three .imgs span {
+  width: 190px;
+  height: 42px;
+  display: block;
+  background: #FFC000;
+  margin-left: 20px;
+  font-size: 12px;
+  padding-left: 10px;
+}
+.classify .second li:hover .three {
+  display: block;
+}
+.classify .second li:nth-child(2) .three {
+  top: -40px;
+}
+.classify .second li:nth-child(3) .three {
+  top: -80px;
+}
+.classify .second li:nth-child(4) .three {
+  top: -120px;
+}
+.classify .second li:nth-child(5) .three {
+  top: -160px;
+}
+.classify .second li:nth-child(6) .three {
+  top: -200px;
+}
+.classify .second li:nth-child(7) .three {
+  top: -240px;
+}
+.classify .second li:nth-child(8) .three {
+  top: -280px;
+}
+.classify .second li:nth-child(9) .three {
+  top: -320px;
+}
+.classify:hover .second {
+  display: block;
+}
+
+/*# sourceMappingURL=head.css.map */
